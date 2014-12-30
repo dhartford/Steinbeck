@@ -11,3 +11,17 @@ Steinbeck may be used by system admins or security testers who have to deal with
 - multi-threading
 - result grabbing
 - progress updating 
+ 
+==========================================================
+dhartford additional notes:
+
+The scripts need to be pure linux scripts.  If you are creating the scripts on windows, you can use a program like notepad++, and do a find/replace for '\r' to remove the carriage return [CR] so it will run properly.
+
+Example script:
+
+#!/bin/bash
+# Steinbeck ping google.com script
+touch progress.txt
+echo 10 > progress.txt
+ping -c 20 google.com > results.txt
+echo 100 > progress.txt
