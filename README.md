@@ -19,9 +19,11 @@ The scripts need to be pure linux scripts.  If you are creating the scripts on w
 
 Example script:
 
+```bash
 #!/bin/bash
 # Steinbeck ping google.com script
 touch progress.txt
 echo 10 > progress.txt
 ping -c 20 google.com > results.txt
 echo 100 > progress.txt
+```
