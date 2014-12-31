@@ -2,6 +2,7 @@
 # Steinbeck ping google.com script
 # this is simply a template/prototype towards a better way to script and get measurable pass/fail type of results.
 # TODO - move check numbers to variables at the top of the script, such that the avg could be longer for external systems, but shorter for internal systems.
+# TODO add 'unknown host' check
 # dhartford 20141231
 touch progress.txt
 echo 10 > progress.txt
